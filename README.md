@@ -13,7 +13,8 @@ Available Routes:
 
 Steps to run locally:
 
-- `docker compose up` - this will start a local MySQL instance. Creds are valid in the `.env` file.
+- `docker compose up` - this will start a local MySQL instance. Creds are valid in the `.env.example` file.
+- copy `env.example` to `.env`
 - `php artisan migrate --seed` - There is a little bit of data just so `GET: /api/games` works.
 - `php artisan serve`
 - `http POST :8000/api/auth/register name=<name> email=<email> password=<password> `
